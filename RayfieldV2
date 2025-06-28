@@ -2,10 +2,9 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 -- Create the UI Window
-local Window = Rayfield:CreateWindow({
-    Name = "Rayfield Spawner",
+local Window = Rayfield:CreateWindow({",
     LoadingTitle = "Spawner Script",
-    LoadingSubtitle = "by ChatGPT",
+    LoadingSubtitle = "by whqtt",
     ConfigurationSaving = {
        Enabled = false
     },
@@ -21,7 +20,7 @@ local MainTab = Window:CreateTab("Main", 4483362458)
 -- Add a button to spawn a part
 local Button = MainTab:CreateButton({
    Name = "Spawn pet",
-   Callback = function()
+   Callback = function(true)
       local player = game.Players.LocalPlayer
       local character = player.Character or player.CharacterAdded:Wait()
       local root = character:WaitForChild("HumanoidRootPart")
