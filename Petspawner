@@ -22,13 +22,13 @@ local PetTab = Window:CreateTab("Pets", 4483362458)
 local pets = {
     ["Dog"] = "rbxassetid://123456789",     -- Replace with real asset ID
     ["Cat"] = "rbxassetid://987654321",
-    ["Dragon"] = "rbxassetid://1122334455"
+    ["Dragonfly"] = "rbxassetid://1122334455"
 }
 
 -- Dropdown to select and spawn a pet
 PetTab:CreateDropdown({
     Name = "Choose a Pet to Spawn",
-    Options = {"Dog", "Cat", "Dragon"},
+    Options = {"Dog", "Cat", "Dragonfly", "Raccoon", "Queen bee"},
     CurrentOption = "Dog",
     Callback = function(selected)
         local assetId = pets[selected]
